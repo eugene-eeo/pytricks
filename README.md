@@ -7,6 +7,7 @@ onto SO to conjure up.
  - [``__init__`` for namedtuple](#__init__-for-namedtuple)
  - [``__exit__`` template](#__exit__-template)
  - [``__hash__`` wtfs](#__hash__-wtfs)
+ - [last n items](#last-n-items)
 
 ### ``__init__`` for namedtuple
 
@@ -56,4 +57,11 @@ False
 >>> v.pop()
 >>> d[h]
 1
+```
+
+### last ``n`` items
+
+```
+>>> deque([1,2,3], maxlen=2)
+deque([2,3], maxlen=2)
 ```
